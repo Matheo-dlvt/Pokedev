@@ -1,3 +1,28 @@
+
+  .all-generations-container {
+    padding: 2rem;
+}
+
+.generation-section {
+    margin-bottom: 3rem;
+}
+
+.generation-title {
+    font-size: 1.8rem;
+    color: #2a75bb;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .pokemon-card {
     display: flex;
     flex-direction: column;
@@ -7,6 +32,13 @@
     padding: 1rem;
     border-radius: 0.7rem;
     background-color: #363636;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .pokemon-card img {
@@ -14,10 +46,73 @@
     height: auto;
 }
 
-.card-container {
+.pokemon-types {
     display: flex;
     flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.pokemon-type {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.pokemon-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.types-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.types-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2a75bb;
+    text-transform: uppercase;
+}
+
+.types-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     justify-content: center;
+}
+
+.type-card {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-  }
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 150px;
+}
+
+.type-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.type-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}

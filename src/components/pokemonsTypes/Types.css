@@ -1,0 +1,150 @@
+.types-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.types-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2a75bb;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.loading-message {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.types-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.type-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8; /* Fond par défaut (sera adapté avec un gradient) */
+    border: 3px solid #d4d4d4;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.type-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.type-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.type-image {
+    width: 80px;
+    height: 80px;
+}
+
+/* Couleurs spécifiques par type */
+.type-card[data-type="Fire"] {
+    background: linear-gradient(135deg, #f08030, #f8d030);
+    border-color: #e25822;
+}
+
+.type-card[data-type="Water"] {
+    background: linear-gradient(135deg, #6890f0, #98d8d8);
+    border-color: #386ce3;
+}
+
+.type-card[data-type="Grass"] {
+    background: linear-gradient(135deg, #78c850, #a7db8d);
+    border-color: #4caf50;
+}
+
+.type-card[data-type="Electric"] {
+    background: linear-gradient(135deg, #f8d030, #f8b400);
+    border-color: #dba617;
+}
+
+.type-card[data-type="Psychic"] {
+    background: linear-gradient(135deg, #f85888, #f8c0c8);
+    border-color: #e24572;
+}
+
+.type-card[data-type="Ice"] {
+    background: linear-gradient(135deg, #98d8d8, #bce6e6);
+    border-color: #64c1c1;
+}
+
+.type-card[data-type="Dragon"] {
+    background: linear-gradient(135deg, #7038f8, #b08bff);
+    border-color: #5328d0;
+}
+
+.type-card[data-type="Dark"] {
+    background: linear-gradient(135deg, #705848, #a1887f);
+    border-color: #4b4036;
+}
+
+.type-card[data-type="Fairy"] {
+    background: linear-gradient(135deg, #ee99ac, #ffcbcb);
+    border-color: #d47a8d;
+}
+
+.type-card[data-type="Normal"] {
+    background: linear-gradient(135deg, #a8a878, #c6c6a7);
+    border-color: #8f8f66;
+}
+
+.type-card[data-type="Fighting"] {
+    background: linear-gradient(135deg, #c03028, #f08080);
+    border-color: #a82824;
+}
+
+.type-card[data-type="Flying"] {
+    background: linear-gradient(135deg, #a890f0, #c6b7f5);
+    border-color: #8478d0;
+}
+
+.type-card[data-type="Ground"] {
+    background: linear-gradient(135deg, #e0c068, #e6d6b3);
+    border-color: #b89a52;
+}
+
+.type-card[data-type="Rock"] {
+    background: linear-gradient(135deg, #b8a038, #d9c986);
+    border-color: #978532;
+}
+
+.type-card[data-type="Bug"] {
+    background: linear-gradient(135deg, #a8b820, #c6d16e);
+    border-color: #869b1b;
+}
+
+.type-card[data-type="Poison"] {
+    background: linear-gradient(135deg, #a040a0, #d890d8);
+    border-color: #8a2e8a;
+}
+
+.type-card[data-type="Ghost"] {
+    background: linear-gradient(135deg, #705898, #a292bc);
+    border-color: #544672;
+}
+
+.type-card[data-type="Steel"] {
+    background: linear-gradient(135deg, #b8b8d0, #d1d1e0);
+    border-color: #8d8d9f;
+}

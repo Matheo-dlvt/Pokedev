@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+src/pages/searchResult/SearchResult.css
+src/pages/searchResult/SearchResult.jsx

@@ -15,6 +15,7 @@ const Header = () => {
             <li><Link to={"/"}>Accueil</Link></li>
             <li><Link to={"/pokemons"}>Pokemons</Link></li>
             <li><Link to={"/types"}>Types</Link></li>
+            <li><Link to={"/random-pokemon"}>Pokemon aléatoire</Link></li>
         </ul>
       </nav>
       <form method="get" onSubmit={handleSubmitSearch} className="header-searchbar-form">
