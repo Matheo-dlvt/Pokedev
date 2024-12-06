@@ -1,8 +1,24 @@
 import { Link } from "react-router-dom"
 import "./Header.css"
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const handleSubmitSearch = () => {}
+  const [searchInput, setSearchInput] = useState(""); // Gère la valeur du champ de recherche
+  const navigate = useNavigate(); // Pour la navigation vers la page de recherche
+
+  const handleSubmitSearch = (e) => {
+      e.preventDefault();
+
+      // Vérifie que l'input n'est pas vide
+      if (searchInput.trim() === "") {
+          alert("Veuillez entrer un nom de Pokémon !");
+          return;
+      }
+
+      // Redirige vers la page de recherche avec le nom du Pokémon
+      navigate(`/search/${searchInput.trim()}`);
+  };
 
   return (
     <header>
@@ -19,7 +35,14 @@ const Header = () => {
         </ul>
       </nav>
       <form method="get" onSubmit={handleSubmitSearch} className="header-searchbar-form">
-        <input type="search" name="query" placeholder="Rechercher un Pokemon"/>
+        <input 
+          type="search" 
+          name="query" 
+          placeholder="Rechercher un Pokemon"
+          value={searchInput}
+                    onChange={(e) => setSearchInput(e.target.value)}
+                    className="search-input"
+        />
         <button type="submit">Rechercher</button>
       </form>
     </header>
