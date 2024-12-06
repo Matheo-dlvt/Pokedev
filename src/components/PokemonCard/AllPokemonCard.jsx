@@ -1,4 +1,4 @@
-import "./PokemonCard.css"
+import "./AllPokemonCard.css"
 import { useState } from "react"
 
 const PokemonCard = () => {
@@ -15,7 +15,7 @@ const PokemonCard = () => {
     }
 
     return (
-        <main>
+        <main className="card-container">
             {pokemons.length > 0 ? (
                 <>
                 {pokemons.map((pokemon) => {
